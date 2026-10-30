@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>執刑者｜有聲書</title>
+    <link>https://ntcloudy.github.io/zhixingzhe-podcast/</link>
+    <atom:link href="https://ntcloudy.github.io/zhixingzhe-podcast/feed.xml" rel="self" type="application/rss+xml"/>
+    <language>zh-tw</language>
+    <description>《執刑者》有聲書。他只是一個送外賣的，被黑道少爺打斷手指、丟進垃圾堆的那一夜，【判處系統】綁定成功。罪孽值一百，斷你一隻手；五百，廢你一輩子；一千，殺。法院判不了的，他來判。※18 禁：含大量暴力與血腥描寫，純屬虛構。</description>
+    <itunes:author>NTCloudy</itunes:author>
+    <itunes:owner><itunes:name>NTCloudy</itunes:name><itunes:email>robinhood126936@gmail.com</itunes:email></itunes:owner>
+    <itunes:image href="https://ntcloudy.github.io/zhixingzhe-podcast/img/cover.jpg"/>
+    <itunes:category text="Fiction"><itunes:category text="Science Fiction"/></itunes:category>
+    <itunes:explicit>true</itunes:explicit>
+    <itunes:type>serial</itunes:type>
+    <item>
+      <title>執刑者｜第一章　舔乾淨</title>
+      <description>《執刑者》第一章　舔乾淨。18 禁：含暴力血腥內容。</description>
+      <enclosure url="https://ntcloudy.github.io/zhixingzhe-podcast/audio/e01.mp3" length="9873453" type="audio/mpeg"/>
+      <guid isPermaLink="false">zhixingzhe-e01.mp3</guid>
+      <pubDate>Fri, 30 Oct 2026 12:01:00 +0800</pubDate>
+      <itunes:duration>1234</itunes:duration>
+      <itunes:episode>1</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>true</itunes:explicit>
+      <itunes:image href="https://ntcloudy.github.io/zhixingzhe-podcast/img/cover.jpg"/>
+    </item>
+  </channel>
+</rss>
