@@ -2,6 +2,7 @@
 # Hourly: new/edited 執刑者 chapters -> MP3 -> RSS -> push (GitHub Pages; Spotify picks it up).
 export HOME=/usr/local/google/home/linyuwei
 export PATH="$HOME/.local/bin:/usr/local/bin:/usr/bin:/bin"
+export GH_TOKEN="$(cat "$HOME/.config/gh/cron_token")"
 cd "$HOME/.gemini/jetski/scratch/zhixingzhe-podcast" || exit 1
 exec 9>/tmp/zhixingzhe-podcast.lock
 flock -n 9 || exit 0
