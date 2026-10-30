@@ -14,8 +14,11 @@ for txt in sorted(glob.glob(f"{SRC}/ch[0-9][0-9]_popo.txt")):
     m = re.search(r"^## (.+)$", md, re.M); title = m.group(1).strip() if m else f"第{cn(n)}章"
     name = title.split("　", 1)[-1]
     f = f"e{n:02d}.mp3"
-    if f not in have or not os.path.exists(f"docs/audio/{f}"):
-        if not os.path.exists(f"docs/audio/{f}"):
+    mp3 = f"docs/audio/{f}"
+    stale = os.path.exists(mp3) and os.path.getmtime(txt) > os.path.getmtime(mp3) + 60
+    if stale: os.remove(mp3)  # chapter text was edited after the audio was made: regenerate
+    if f not in have or not os.path.exists(mp3):
+        if not os.path.exists(mp3):
             subprocess.run([sys.executable, "-u", "tools/tts.py", txt, f"docs/audio/{f}",
                             f"執刑者。{title.replace('　', '，')}。", f"{title.split('　')[0]}，完。感謝收聽執刑者。"], check=True)
         if f not in have:
